@@ -127,7 +127,7 @@ public class BrowserTabManager {
             this.addTab("about:blank", null, false, false);
         }
 
-        if (isEmptyList || this.previousTab == null || this.previousResourceClient == null) {
+        if (isEmptyList || this.previousTab == null || this.previousResourceClient == null || this.previousResourceClient == resourceClient) {
             int lastTabIndex = this.tabs.size() - 1;
             this.previousTab = this.tabs.get(lastTabIndex);
             this.previousResourceClient = this.resourceClients.get(lastTabIndex);
